@@ -1,59 +1,72 @@
 @import url('https://fonts.googleapis.com/css2?family=Iceberg&family=Jim+Nightshade&family=Snowburst+One&display=swap');
 
 /* =============================== */
-/*         GENERAL LAYOUT          */
+/*           FROST FRAME           */
 /* =============================== */
 
 .me-den {
     text-align: center;
-    background: rgba(220, 240, 255, 0.25);
-    padding: 20px;
+
+    /* frosty white-blue background */
+    background: rgba(230, 240, 255, 0.65);
+
+    /* frosted double frame */
+    padding: 18px;
     border-radius: 15px;
-    border: 2px solid rgba(180, 210, 230, 0.8);
-    backdrop-filter: blur(4px);
-    box-shadow: 0 0 12px rgba(150, 200, 255, 0.35);
+
+    /* outer frame */
+    border: 6px outset rgba(180, 200, 230, 0.9);
+
+    /* inner frosted layer */
+    box-shadow:
+        0 0 0 6px rgba(210, 225, 245, 0.8) inset,
+        0 0 10px rgba(150, 190, 240, 0.4);
+
     max-width: 600px;
     margin: auto;
 }
 
 /* inner wrapper */
 .me-den .inner {
-    padding: 10px;
+    padding: 10px 20px;
 }
 
 /* =============================== */
 /*           TEXT FONTS            */
 /* =============================== */
 
+/* title — Snowburst */
 .me-den h1 {
     font-family: "Snowburst One", cursive !important;
     font-size: 40px;
     margin-bottom: 10px;
-    color: #e8faff;
-    text-shadow: 0 0 6px rgba(180, 220, 255, 0.6);
+    color: #2a445c;
+    text-shadow: 0 0 6px rgba(220, 240, 255, 0.7);
 }
 
-.me-den .intro,
+/* body text — Iceberg */
 .me-den p,
-.me-den span,
+.me-den .intro,
+.me-den div,
 .me-den a,
 .me-den b,
 .me-den i,
 .me-den u {
     font-family: "Iceberg", sans-serif !important;
-    color: #e7f4ff;
+    color: #1c3344;
     font-size: 18px;
 }
 
-/* FOOTNOTE FIX */
-.me-den #hey {
+/* FOOTNOTE — Jim Nightshade */
+.me-den .footnote-text {
     font-family: "Jim Nightshade", cursive !important;
-    font-size: 20px;
-    color: #e3e8ff;
+    color: #25374a;
+    font-size: 15px;      /* significantly smaller */
+    display: block;
 }
 
 /* =============================== */
-/*        IMAGE + HR STYLE         */
+/*       IMAGE + HR DECORATION     */
 /* =============================== */
 
 .me-den .image-wrap {
@@ -62,31 +75,35 @@
 
 .me-den img {
     border-radius: 10px;
-    border: 2px solid rgba(200, 225, 255, 0.6);
-    box-shadow: 0 0 10px rgba(150, 200, 255, 0.3);
+    border: 2px solid rgba(150, 180, 210, 0.7);
+    box-shadow: 0 0 10px rgba(150, 200, 255, 0.4);
 }
 
 .me-den .frost-hr {
     border: none;
     height: 2px;
+    width: 75%;
+    margin: 25px auto;
     background: linear-gradient(
         to right,
         rgba(200, 220, 255, 0),
-        rgba(200, 220, 255, 0.9),
+        rgba(160, 190, 220, 0.9),
         rgba(200, 220, 255, 0)
     );
-    margin: 25px 0;
 }
 
 /* =============================== */
-/*         FOOTNOTE BOX            */
+/*        FOOTNOTE CONTAINER       */
 /* =============================== */
 
 .me-den .footnote-box {
     margin-top: 15px;
-    padding: 10px;
+    padding: 8px 12px;
     border-radius: 8px;
-    background: rgba(210, 225, 255, 0.15);
-    border: 1px solid rgba(180, 200, 230, 0.5);
+
+    /* slight icy tint */
+    background: rgba(220, 235, 255, 0.4);
+    border: 1px solid rgba(150, 180, 210, 0.6);
+
     display: inline-block;
 }
