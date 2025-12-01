@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Iceberg&family=Jim+Nightshade&family=Snowburst+One&display=swap');
+
+/* =============================== */
+/*           FROST FRAME           */
+/* =============================== */
+
+.me-den {
+    text-align: center;
+
+    /* frosty white-blue background */
+    background: rgba(230, 240, 255, 0.65);
+
+    /* frosted double frame */
+    padding: 18px;
+    border-radius: 15px;
+
+    /* outer frame */
+    border: 6px outset rgba(180, 200, 230, 0.9);
+
+    /* inner frosted layer */
+    box-shadow:
+        0 0 0 6px rgba(210, 225, 245, 0.8) inset,
+        0 0 10px rgba(150, 190, 240, 0.4);
+
+    max-width: 600px;
+    margin: auto;
+}
+
+/* inner wrapper */
+.me-den .inner {
+    padding: 10px 20px;
+}
+
+/* =============================== */
+/*           TEXT FONTS            */
+/* =============================== */
+
+/* title — Snowburst */
+.me-den h1 {
+    font-family: "Snowburst One", cursive !important;
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #2a445c;
+    text-shadow: 0 0 6px rgba(220, 240, 255, 0.7);
+}
+
+/* body text — Iceberg */
+.me-den p,
+.me-den .intro,
+.me-den div,
+.me-den a,
+.me-den b,
+.me-den i,
+.me-den u {
+    font-family: "Iceberg", sans-serif !important;
+    color: #1c3344;
+    font-size: 18px;
+}
+
+/* FOOTNOTE — Jim Nightshade */
+.me-den .footnote-text {
+    font-family: "Jim Nightshade", cursive !important;
+    color: #25374a;
+    font-size: 15px;      /* significantly smaller */
+    display: block;
+}
+
+/* =============================== */
+/*       IMAGE + HR DECORATION     */
+/* =============================== */
+
+.me-den .image-wrap {
+    margin: 20px 0;
+}
+
+.me-den img {
+    border-radius: 10px;
+    border: 2px solid rgba(150, 180, 210, 0.7);
+    box-shadow: 0 0 10px rgba(150, 200, 255, 0.4);
+}
+
+.me-den .frost-hr {
+    border: none;
+    height: 2px;
+    width: 75%;
+    margin: 25px auto;
+    background: linear-gradient(
+        to right,
+        rgba(200, 220, 255, 0),
+        rgba(160, 190, 220, 0.9),
+        rgba(200, 220, 255, 0)
+    );
+}
+
+/* =============================== */
+/*        FOOTNOTE CONTAINER       */
+/* =============================== */
+
+.me-den .footnote-box {
+    margin-top: 15px;
+    padding: 8px 12px;
+    border-radius: 8px;
+
+    /* slight icy tint */
+    background: rgba(220, 235, 255, 0.4);
+    border: 1px solid rgba(150, 180, 210, 0.6);
+
+    display: inline-block;
+}
+/*CHECK*/
