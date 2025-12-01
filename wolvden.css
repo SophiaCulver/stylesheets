@@ -12,7 +12,7 @@
 
 /* Footnotes use Jim Nightshade */
 .me-den #footnotes,
-.me-den #footnotes * {
+.me-den #footnotes #hey {
     font-family: "Jim Nightshade", cursive !important;
 }
 
