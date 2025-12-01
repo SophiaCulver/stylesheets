@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Iceberg&family=Jim+Nightshade&family=Snowburst+One&display=swap');
+
+/* =============================== */
+/*           FROST FRAME           */
+/* =============================== */
+
+.me-den {
+    text-align: center;
+
+    /* frosty white-blue background */
+    background: rgba(230, 240, 255, 0.65);
+
+    /* frosted double frame */
+    padding: 18px;
+    border-radius: 15px;
+
+    /* outer frame */
+    border: 6px outset rgba(180, 200, 230, 0.9);
+
+    /* inner frosted layer */
+    box-shadow:
+        0 0 0 6px rgba(210, 225, 245, 0.8) inset,
+        0 0 10px rgba(150, 190, 240, 0.4);
+
+    max-width: 600px;
+    margin: auto;
+}
+
+/* inner wrapper */
+.me-den .inner {
+    padding: 10px 20px;
+}
+
+/* =============================== */
+/*           TEXT FONTS            */
+/* =============================== */
+
+/* title — Snowburst */
+.me-den h1 {
+    font-family: "Snowburst One", cursive !important;
+    font-size: 40px;
+    margin-bottom: 8px !important; /* tighter heading spacing */
+    color: #2a445c;
+    text-shadow: 0 0 6px rgba(220, 240, 255, 0.7);
+}
+
+/* body text — Iceberg */
+.me-den p,
+.me-den .intro,
+.me-den div,
+.me-den a,
+.me-den b,
+.me-den i,
+.me-den u {
+    font-family: "Iceberg", sans-serif !important;
+    color: #1c3344;
+    font-size: 18px;
+}
+
+/* =============================== */
+/*       TIGHTER SPACING FIXES     */
+/* =============================== */
+
+/* paragraphs slightly tighter without touching line-height */
+.me-den p,
+.me-den .intro {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+}
+
+/* reduce space above & below the image */
+.me-den .image-wrap {
+    margin: 12px 0 !important;
+}
+
+/* =============================== */
+/*            IMAGE STYLE          */
+/* =============================== */
+
+.me-den img {
+    width: 250px !important; /* smaller image */
+    border-radius: 12px;
+    border: 4px solid rgba(150, 180, 210, 0.9); /* thicker border */
+    padding: 6px; /* inner frosty padding */
+    background: rgba(255, 255, 255, 0.55); /* frosty glow */
+    box-shadow: 0 0 10px rgba(150, 200, 255, 0.4);
+}
+
+/* =============================== */
+/*           FROST DIVIDER         */
+/* =============================== */
+
+.me-den .frost-hr {
+    border: none;
+    height: 2px;
+    width: 75%;
+    margin: 18px auto; /* slightly tighter */
+    background: linear-gradient(
+        to right,
+        rgba(200, 220, 255, 0),
+        rgba(160, 190, 220, 0.9),
+        rgba(200, 220, 255, 0)
+    );
+}
+
+/* =============================== */
+/*        FOOTNOTE CONTAINER       */
+/* =============================== */
+
+.me-den .footnote-box {
+    margin-top: 6px !important;  /* closer to the image */
+    padding: 2px 4px !important; /* much less padding */
+    border-radius: 6px;
+    background: rgba(220, 235, 255, 0.4);
+    border: 1px solid rgba(150, 180, 210, 0.6);
+    display: inline-block;
+}
+
+/* FOOTNOTE TEXT — Jim Nightshade */
+.me-den .footnote-text {
+    font-family: "Jim Nightshade", cursive !important;
+    color: #25374a;
+    font-size: 14px !important; /* smaller, elegant */
+    margin: 0 !important;
+    padding: 0 !important;
+}
