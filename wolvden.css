@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Iceberg&family=Jim+Nightshade&family=Snowburst+One&display=swap');
+
+/* center everything */
+.me-den .center {
+    text-align: center;
+}
+
+/* H1 uses Snowburst */
+.me-den h1 {
+    font-family: "Snowburst One", cursive !important;
+}
+
+/* Footnotes use Jim Nightshade */
+.me-den #footnotes,
+.me-den #footnotes * {
+    font-family: "Jim Nightshade", cursive !important;
+}
+
+/* Everything else uses Iceberg */
+.me-den,
+.me-den p,
+.me-den span,
+.me-den div,
+.me-den a,
+.me-den b,
+.me-den i,
+.me-den u {
+    font-family: "Iceberg", sans-serif !important;
+}
